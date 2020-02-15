@@ -21,6 +21,12 @@ gem 'jbuilder', '~> 2.7'
 gem 'mongoid'
 #https://www.botreetechnologies.com/blog/setting-up-ruby-on-rails-5-app-with-mongodb-in-10-minutes
 gem 'bson_ext'
+# Image upload
+gem 'carrierwave'
+# cloudinary 
+gem 'cloudinary'
+# devise
+gem 'devise'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
