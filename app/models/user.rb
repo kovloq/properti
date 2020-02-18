@@ -16,6 +16,11 @@ class User
   ## Rememberable
   field :remember_created_at, type: Time
 
+  field :name
+  validates_presence_of :name
+  validates_uniqueness_of :name, :email, :case_sensitive => false
+  # attr_accessible :name, :email, :password, :password_confirmation, :remember_me
+
   ## Trackable
   # field :sign_in_count,      type: Integer, default: 0
   # field :current_sign_in_at, type: Time
